@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Jogo da velha</title>
+		<script src="jquery-3.2.1.js"></script>
+		<script src="game.js"></script>
+
+		<link href="CSS/estilo.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<div id="pagina_inicial">
+			<table>
+				<tbody>
+					<tr>
+						<td colspan="3" >JOGO DA VELHA</td>
+					</tr>
+
+					<tr>
+						<td>
+							<img src="imagens/jogador_1.png" />
+							<br />
+							<input id="campo-apelido-jd1" type="text" maxlength="10" placeholder="Apelido jogador 1" class="input-apelido"/>
+						</td>
+						<td>
+							<img id="btn-inicia-jogo" src="imagens/iniciar.png" />
+						</td>
+						<td>
+							<img src="imagens/jogador_2.png" />
+							<br />
+							<input id="campo-apelido-jd2" type="text" maxlength="10" placeholder="Apelido jogador 2" class="input-apelido"/>
+						</td>
+					</tr>
+				</table>
+		</div>
+
+		<div id="palco_jogo" >
+			<div class="palco-img" >
+				<img src="imagens/jogador_1.png" />
+				<br>
+				<span id="jogador1"></span>
+			</div>
+
+			<div class="palco-img">
+				<table>
+					<tr>
+						<td class="bordas-red">
+							<div id="A-1" class="desenho-jogo jogada"></div>
+						</td>
+						<td class="bordas-red">
+							<div id="A-2" class="desenho-jogo jogada"></div>
+						</td>
+						<td>
+							<div id="A-3" class="corrigindo jogada"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="bordas-red">
+							<div id="B-1" class="desenho-jogo jogada"></div>
+						</td>
+						<td class="bordas-red">
+							<div id="B-2" class="desenho-jogo jogada"></div>
+						</td>
+						<td>
+							<div id="B-3" class="corrigindo jogada"></div>
+						</td>
+					</tr>
+					<tr>
+						<td class="bordas-red">
+							<div id="C-1" class="desenho-jogo jogada"></div>
+						</td>
+						<td class="bordas-red">
+							<div id="C-2" class="desenho-jogo jogada"></div>
+						</td>
+						<td>
+							<div id="C-3" class="corrigindo jogada"></div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<div class="palco-img">
+				<img src="imagens/jogador_2.png" />
+				<br>
+				<span id="jogador2"></span>
+			</div>
+		</div>
+
+	</body>
+</html>

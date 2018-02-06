@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+#pagina_inicial td{
+    text-align: center;
+}
+
+#pagina_inicial table{
+    border: 0;
+    width: 600px;
+    padding-left: 460px;
+
+}
+.input-apelido{
+    border: none;
+}
+
+#palco_jogo{
+    margin-top: 50px;
+    text-align:center;
+    display: none;
+}
+
+.palco-img{
+    display: inline-block;
+}
+
+#palco_jogo table{
+    border: none;
+}
+
+.bordas-red{
+    border-bottom: solid 1px purple;
+    border-right: solid 1px greenyellow;
+}
+
+/*Corrigindo as bordas direitas */
+.corrigindo{
+    width:100px;
+    height:100px;
+    border-bottom: solid 1px #39caff;
+}
+/*Largura e altura das marcaçoes do jogo */
+.desenho-jogo{
+    width:100px;
+    height:100px;
+}
